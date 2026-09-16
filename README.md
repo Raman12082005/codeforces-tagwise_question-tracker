@@ -2,7 +2,7 @@
 
 CF tagwise_question Tracker is a public, stateless Codeforces analytics website.
 
-A visitor enters a public Codeforces profile URL and receives an interactive dashboard containing profile information, solved-problem statistics, ** topic analysis **, submission activity, rating progression and solving progress.
+A visitor enters a public Codeforces profile URL and receives an interactive dashboard containing profile information, solved-problem statistics, topic analysis, submission activity, rating progression and solving progress.
 
 No account is required.
 
