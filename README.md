@@ -1,58 +1,58 @@
 # CF tagwise_question Tracker
 
-CF tagwise_question Tracker is a public, stateless Codeforces analytics website.
+A full-stack web application that analyzes a Codeforces profile
+and provides detailed statistics about competitive programming progress.
 
 A visitor enters a public Codeforces profile URL and receives an interactive dashboard containing profile information, solved-problem statistics, topic analysis, submission activity, rating progression and solving progress.
 
 No account is required.
 
+## Live Demo
+https://codeforces-tracker-nu.vercel.app/
+
 ## Features
 
-- Public Codeforces profile analysis
+- Codeforces profile analysis
+- Rating and rank information
+- Maximum rating
 - Total unique problems solved
-- Total topics covered
-- Topic-wise solved problems
-- Topic percentages
-- Rating filters
-- Difficulty filters
-- Submission activity heatmap
-- Recent submissions
+- Topic-wise analysis
+- Difficulty distribution
 - Rating progression
-- Problems-solved-over-time chart
-- Responsive dashboard
-- Four selectable themes:
-  - Cipher Gold
-  - blood red theme
-  - deep ocean blue
-  - Neon Synth
-- Theme persistence with browser localStorage
-- Codeforces API request throttling
-- Temporary in-memory profile caching
-- Public API request limiting
+- Solved problems over time
+- Recent submissions
+- Heatmap
+- Rating/difficulty filters
+- Multiple UI themes
 
-## Stack
+## Tech Stack
 
-### Frontend
-
+Frontend:
 - React
 - Vite
 - Tailwind CSS
 - Lucide React
 - Recharts
 
-### Backend
-
+Backend:
 - Python
 - FastAPI
 - Requests
 
-### External API
+Deployment:
+- Vercel
 
+API:
 - Codeforces API
 
 ### Storage
 
 There is no database.
+
+## Architecture
+
+User -> React Frontend -> FastAPI Backend -> Codeforces API -> Analyzer -> JSON Response -> Dashboard
+
 
 The application does not store:
 - users
