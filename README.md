@@ -62,27 +62,6 @@ The application does not store:
 - personal records
 
 Theme preference is stored only in the visitor's browser using localStorage.
-
-## Architecture
-
-```text
-Browser
-   |
-   v
-React + Vite
-   |
-   | HTTP
-   v
-FastAPI
-   |
-   +----> Codeforces user.info
-   |
-   +----> Codeforces user.status
-   |
-   +----> Codeforces user.rating
-   |
-   v
-Python Analyzer
    |
    v
 Clean JSON
